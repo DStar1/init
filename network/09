@@ -1,0 +1,4 @@
+ping 42.fr | grep 'PING' and it is 163.172.250.11
+
+???????????not sure
+nslookup 42.fr | grep "Address: " | awk '{print $2}'

@@ -1,0 +1,7 @@
+nslookup slash16.org | grep 'Address' | awk '{print $2}'
+
+not sure if it wants all or just the first
+
+nslookup slash16.org | grep -m 1 'Address' | awk '{print $2}'
+
+(Address or server?)

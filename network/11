@@ -1,0 +1,3 @@
+traceroute slash16.org | grep "nat"
+
+this is the nat address which is where the link is made

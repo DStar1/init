@@ -1,0 +1,2 @@
+cat /etc/resolv.conf
+add grep 'nameserver' | awk '{print $2}' for only ip address
