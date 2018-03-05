@@ -1,0 +1,6 @@
+(crontab -l 2>/dev/null; echo "* 4 * * 1 apt-get update -y >> /var/log/update_script.log") | crontab -
+
+
+
+## possible other solution, but was not working
+## echo "* 4 * * 1 apt-get update -y >> /var/log/update_script.log" >> /etc/crontab

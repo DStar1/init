@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sum1="$(md5sum "/etc/crontab")"
+sleep 2
+sum2="$(md5sum "/etc/crontab")"
+if [ "$sum1" = "$sum2" ];
+then
+    echo "Identical"
+else
+    echo "Different" (send email to root)
+fi
+
+#also schedule task

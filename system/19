@@ -1,0 +1,3 @@
+iptables -A INPUT -p tcp -j DROP
+
+-A or -I?
